@@ -110,15 +110,15 @@
          Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
         */
 
-      //const changeUrls = function () {
-      //const myLinks = document.querySelectorAll(`a:not(footer a)`);
-      //myLinks.forEach((link) =>  {
-      //link.href = `https://www.google.com`;
-      //link.target = `_blank`;
-      //link.innerText = `Go to Google` -->`;
-      //})
-      //};
-
+      const changeUrls = function () {
+        const myLinks = document.querySelectorAll(`a:not(footer a)`);
+        myLinks.forEach((link) => {
+          link.href = `https://www.google.com`;
+          link.target = `_blank`;
+          link.innerText = `Go to Google -->`;
+        });
+      };
+      changeUrls();
       /* ESERCIZIO 5
          Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
       */
@@ -131,7 +131,7 @@
         secondUl.appendChild(list);
       };
 
-      addClassToTitle();
+      addToTheSecond();
       /* ESERCIZIO 6
          Scrivi una funzione che aggiunga un paragrafo al primo div
       */
@@ -155,6 +155,7 @@
 
       const paintItGreen = function () {
         const myBackground = document.getElementById("firstList");
+        
         myBackground.style.backgroundColor = "green";
       };
 
